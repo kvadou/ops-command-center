@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+body > div {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+ul {
+  margin: 0;
+  padding: 0 0 0 1.5em;
+}
+
+li {
+  margin: 1.5em 0;
+  padding: 0;
+}
+
+b {
+  margin-right: 3px;
+}
+
+.fc-event .fc-event-title {
+  color: var(--textColor) !important;
+  font-weight: 500 !important;
+  min-width: 0px;
+  overflow: auto;
+  white-space: initial;
+  padding: 3px !important;
+}
+
+.fc-event:hover .uniform-event-title {
+  color: #333 !important;
+  opacity: 0.8;
+}
+
+.fc-list-event-time {
+  color: #ccc !important;
+}

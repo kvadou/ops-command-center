@@ -1,0 +1,6 @@
+# Exclude Python files from Heroku build to prevent Python buildpack detection
+# The forecast service is deployed separately and doesn't need Python in the main app
+requirements.txt
+runtime.txt
+forecast-service/
+

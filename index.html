@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/logo512.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo512.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/logo512.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#6A469D" />
+    <meta name="description" content="Acme Operations" />
+    <meta property="og:title" content="Acme Operations" />
+    <meta property="og:description" content="Acme Operations" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Acme Operations" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Acme Operations" />
+    <meta name="twitter:description" content="Acme Operations" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5ZJ73QP3');</script>
+<!-- End Google Tag Manager -->
+
+    <!-- Meta Pixel Base Codes -->
+    <!-- Sanitize URL query params BEFORE Meta Pixel loads to avoid sending blocked params -->
+    <script>
+      (function () {
+        try {
+          var allowed = new Set([
+            'utm_source',
+            'utm_medium',
+            'utm_campaign',
+            'utm_content',
+            'utm_term',
+            'utm_id',
+            // Preserve deep-linking params needed by the app
+            'bookingTypeId',
+            'serviceId',
+            // Event Lead Capture deep links
+            'eventId',
+            'eventName',
+            // Preserve Stripe success params used by SuccessPage
+            'submissionId',
+            'session_id',
+            // Password reset token + Google OAuth redirect params
+            'token',
+            'user',
+            // Staff booking mode
+            'staff',
+            // Owner/franchise booking mode (50% discount)
+            'owner',
+          ]);
+          var current = new URL(window.location.href);
+          // Build a clean URL preserving only whitelisted UTM params
+          var clean = new URL(current.origin + current.pathname + current.hash);
+          current.searchParams.forEach(function (value, key) {
+            if (allowed.has(key)) clean.searchParams.set(key, value);
+          });
+          if (clean.href !== current.href) {
+            window.history.replaceState(null, '', clean.href);
+          }
+        } catch (e) {
+          // no-op
+        }
+      })();
+    </script>
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1882314972045275");
+      fbq("track", "PageView");
+      
+      // Also send PageView server-side for better Conversions API coverage
+      // This improves Meta's coverage rate and deduplication
+      (function() {
+        try {
+          var eventId = "PageView_" + Math.floor(Date.now() / 1000);
+          fetch('/api/meta-tracking/pageview', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              url: window.location.href,
+              referrer: document.referrer,
+              eventId: eventId
+            })
+          }).catch(function(err) {
+            // Silently fail - don't break the page if server-side tracking fails
+            if (window.location.hostname === 'localhost') {
+              console.warn('Failed to send PageView server-side:', err);
+            }
+          });
+        } catch (e) {
+          // Silently fail
+        }
+      })();
+    </script>
+
+  
+    <link rel="manifest" href="/manifest.json" />
+  
+    <title>Acme Operations</title>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZJ73QP3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TW829QCC"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+    <!-- Facebook Pixel noscript (must be in body, not head) -->
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1882314972045275&ev=PageView&noscript=1"
+        alt=""
+      />
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/index.js"></script>
+  </body>
+</html>

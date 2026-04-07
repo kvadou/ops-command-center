@@ -1,0 +1,68 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+tests/e2e/screenshots/
+tests/e2e/.auth/
+test-results/
+playwright-report/
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore environment files
+.env
+.env.*
+!.env.example
+
+# Ignore Cursor configuration files with sensitive data
+.cursorrules
+
+# Ignore MCP files (contain database credentials)
+/mcp-servers
+.mcp.json
+mcp.json
+mcp-configs/
+
+# Ignore script progress files and logs
+scripts/.backfill-progress.json
+backfill-output.log
+backfill-continuous.log
+mark-deleted-output.log
+run-backfill-continuous.sh
+
+# Ignore production database backups (too large for git)
+production_backup_*.sql
+production_schema_*.sql
+*.dump
+*.backup
+
+# Git worktrees
+.worktrees/
+
+# Claude Code settings (may contain database credentials)
+.claude/
+
+# PII data files (never commit)
+data/
+franchise-academy-content/
+
+# Build artifacts (committed historically, should not be tracked)
+dist/.env
+.env.local

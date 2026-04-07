@@ -1,0 +1,167 @@
+[
+  {
+    "name": "1099",
+    "displayColour": "#32cd32",
+    "appliesTo": ["Tutor"],
+    "machineName": "1099"
+  },
+  {
+    "name": "Club - Park Slope",
+    "displayColour": "#1e90ff",
+    "appliesTo": ["Tutor", "Client", "Student", "Job"],
+    "machineName": "park-slope-club"
+  },
+  {
+    "name": "Club - Park Slope Support",
+    "displayColour": "#ff1493",
+    "appliesTo": ["Tutor", "Job"],
+    "machineName": "desking"
+  },
+  {
+    "name": "Club - UES",
+    "displayColour": "#1e90ff",
+    "appliesTo": ["Tutor", "Client", "Student", "Job"],
+    "machineName": "ues-club"
+  },
+  {
+    "name": "Club - UES Support",
+    "displayColour": "#ff1493",
+    "appliesTo": ["Tutor", "Job"],
+    "machineName": "club-ues-support"
+  },
+  {
+    "name": "First Lesson Complete",
+    "displayColour": "#ffffff",
+    "appliesTo": ["Job"],
+    "machineName": "first-appt"
+  },
+  {
+    "name": "Home - Hamptons",
+    "displayColour": "#ffebcd",
+    "appliesTo": ["Administrator", "Tutor", "Affiliate", "Client", "Student", "Job"],
+    "machineName": "hamptons"
+  },
+  {
+    "name": "Home - LA",
+    "displayColour": "gold",
+    "appliesTo": ["Administrator", "Tutor", "Affiliate", "Client", "Student", "Job"],
+    "machineName": "private-in-home-la"
+  },
+  {
+    "name": "Home - NYC",
+    "displayColour": "MediumOrchid",
+    "appliesTo": ["Administrator", "Tutor", "Affiliate", "Client", "Student", "Job"],
+    "machineName": "private-in-home-nyc"
+  },
+  {
+    "name": "Home - SF",
+    "displayColour": "#40e0d0",
+    "appliesTo": ["Administrator", "Tutor", "Affiliate", "Client", "Student", "Job"],
+    "machineName": "home-sf"
+  },
+  {
+    "name": "Home - Westchester",
+    "displayColour": "BlanchedAlmond",
+    "appliesTo": ["Tutor", "Client", "Student", "Job"],
+    "machineName": "westchester"
+  },
+  {
+    "name": "Job Finished",
+    "displayColour": "yellow",
+    "appliesTo": ["Job"],
+    "machineName": "service-finished"
+  },
+  {
+    "name": "No Label",
+    "displayColour": "#d3d3d3",
+    "appliesTo": ["Client", "Student", "Job"],
+    "machineName": "test-label"
+  },
+  {
+    "name": "Non-Billable",
+    "displayColour": "#2f4f4f",
+    "appliesTo": ["Client", "Student", "Job"],
+    "machineName": "non-billable"
+  },
+  {
+    "name": "Non Teaching Work",
+    "displayColour": "SlateGray",
+    "appliesTo": ["Job"],
+    "machineName": "non-teaching-work"
+  },
+  {
+    "name": "Online",
+    "displayColour": "lightgreen",
+    "appliesTo": ["Administrator", "Tutor", "Affiliate", "Client", "Student", "Job"],
+    "machineName": "online"
+  },
+  {
+    "name": "Referral (Converted)",
+    "displayColour": "#228b22",
+    "appliesTo": ["Client"],
+    "machineName": "referral"
+  },
+  {
+    "name": "Referral (Pending)",
+    "displayColour": "#addcad",
+    "appliesTo": ["Client"],
+    "machineName": "referral-pending"
+  },
+  {
+    "name": "School - Hamptons",
+    "displayColour": "#ffa500",
+    "appliesTo": ["Client", "Student", "Job"],
+    "machineName": "school-hamptons"
+  },
+  {
+    "name": "School - LA",
+    "displayColour": "#ffa500",
+    "appliesTo": ["Administrator", "Tutor", "Affiliate", "Client", "Student", "Job"],
+    "machineName": "school-la"
+  },
+  {
+    "name": "School - NYC",
+    "displayColour": "#ffa500",
+    "appliesTo": ["Administrator", "Tutor", "Affiliate", "Client", "Student", "Job"],
+    "machineName": "school-nyc"
+  },
+  {
+    "name": "School - SF",
+    "displayColour": "#ffa500",
+    "appliesTo": ["Administrator", "Tutor", "Affiliate", "Client", "Student", "Job"],
+    "machineName": "school-sf"
+  },
+  {
+    "name": "Shenandoah Valley",
+    "displayColour": "DarkMagenta",
+    "appliesTo": ["Tutor"],
+    "machineName": "shenandoah-valley"
+  },
+  {
+    "name": "Sync to Website",
+    "displayColour": "Gold",
+    "appliesTo": ["Job"],
+    "machineName": "sync-to-website"
+  },
+  {
+    "name": "Takeover",
+    "displayColour": "#158b11",
+    "appliesTo": ["Job"],
+    "machineName": "takeover"
+  },
+  {
+    "name": "Tournament",
+    "displayColour": "#dc143c",
+    "appliesTo": ["Tutor", "Client", "Student", "Job"],
+    "machineName": "tournament"
+  },
+  {
+    "name": "W2",
+    "displayColour": "#1e90ff",
+    "appliesTo": ["Tutor"],
+    "machineName": "w2"
+  }
+]
+
+
+
